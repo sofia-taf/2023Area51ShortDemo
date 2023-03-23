@@ -1,2 +1,3 @@
-# 2023Area51Demo
-Area 51 Demo with Global effort and unique prios
+# 2023Area51ShortDemo
+
+Area 51 short demo (3 stocks) with global effort and unique priors
