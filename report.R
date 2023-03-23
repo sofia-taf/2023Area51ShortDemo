@@ -7,8 +7,7 @@
 ##         stock_timeseries.pdf (report)
 
 library(TAF)
-#taf.library(SOFIA)
-library(SOFIA)
+taf.library(SOFIA)
 suppressMessages(library(egg))  # ggarrange
 library(ggplot2)  # geom_hline, geom_line, ggplot, ggsave, ggtitle
 library(sraplus)  # plot_prior_posterior, plot_sraplus
@@ -75,4 +74,3 @@ pdf("report/stock_timeseries.pdf")
 for(i in seq_len(nrow(stocks)))
   print(plot_sraplus(stocks$sraplus_fit[[i]]) + ggtitle(stocks$stock[i]))
 dev.off()
-
